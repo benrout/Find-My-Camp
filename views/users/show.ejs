@@ -1,0 +1,40 @@
+<% include ../partials/header %>
+
+<div class="row">
+    <div class="col-md-4 col-sm-12">
+        <div class="card">
+            <h2>Personal Profile</h2>
+            <h3><strong><%= user.username %></strong></h3>
+            <% if(user.email){ %>
+                <div class="caption">
+                    <a href="mailto:<%= user.email %>"><%= user.email %></a>
+                </div>
+            <% } %>
+            <hr>
+            <div class="caption">
+                <p>A little bit about myself... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque unde suscipit vel? At reprehenderit vero vitae iusto illum excepturi nemo aspernatur voluptatibus, magnam consectetur beatae, tenetur distinctio possimus, voluptates quisquam!</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="col-md-8">
+        <h2>Campgrounds added by <%= user.username %></h2>
+        <% campgrounds.forEach(function(campground){ %>
+            <div class="col-md-6">
+                <div class="thumbnail" style="text-align: center">
+                    <img src="<%= campground.image %>"> 
+                    <div class="caption">
+                        <h4><a href="/campgrounds/<%= campground._id %>"><%= campground.name %></a></h4>
+                        <p class="description"><%= campground.description %></p>
+                    </div>
+                    <p>
+                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+            </div>
+        <% }) %>     
+    </div>
+</div>
+
+<% include ../partials/footer %>

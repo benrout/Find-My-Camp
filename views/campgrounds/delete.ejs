@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+<div class="row">
+    <h1 style="text-align: center;">Are you sure you want to delete <%= campground.name %>?</h1>
+    <div style="width: 30%; margin: 25px auto; text-align: center;">
+        <form class="delete-form" action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-danger">Yes, delete <%= campground.name %></button>
+        </form>
+        <hr>
+        <a href="/campgrounds/<%= campground._id %>">No, take me back to <%= campground.name %></a>
+    </div>
+</div>    
+    
+<% include ../partials/footer %>
