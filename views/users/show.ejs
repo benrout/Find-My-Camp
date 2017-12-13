@@ -12,14 +12,15 @@
             <% } %>
             <hr>
             <div class="caption">
-                <p>A little bit about myself... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque unde suscipit vel? At reprehenderit vero vitae iusto illum excepturi nemo aspernatur voluptatibus, magnam consectetur beatae, tenetur distinctio possimus, voluptates quisquam!</p>
+                <p>A little bit about myself... What can I say? I love spending time outdoors in the sun and discovering new places to top up my sunkissed look.</p>
             </div>
             <hr>
         </div>
     </div>
     
     <div class="col-md-8">
-        <h2>Campgrounds added by <%= user.username %></h2>
+        <h2>Campgrounds added by <strong><%= user.username %></strong></h2>
+        <hr>
         <% campgrounds.forEach(function(campground){ %>
             <div class="col-md-6">
                 <div class="thumbnail" style="text-align: center">
