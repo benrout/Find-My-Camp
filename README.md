@@ -4,6 +4,6 @@ A responsive, user-driven, full-stack web application in which users can explore
 
 ## Sneak preview:
 
-![Find My Camp Landing Page](https://imgur.com/1OC86Xr)
+![Find My Camp Landing Page](https://i.imgur.com/1OC86Xr.png)
 
-![Find My Camp Home Page](https://imgur.com/OQ1hYGg)
+![Find My Camp Home Page](https://i.imgur.com/OQ1hYGg.png)
